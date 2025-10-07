@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import HeaderFive from '../elements/headers/HeaderFive'
+import HeaderOne from '../elements/headers/HeaderOne'
 import BreadCrumb from '../components/breadcrumb/BreadCrumb'
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -15,7 +16,7 @@ function ServiceDetails() {
   useEffect(()=> {
     
     // title setup 
-    document.title = `Choicy - Service Details`
+    document.title = `McCollins Media - Service Details`
 
     // aos activation
     AOS.init();
@@ -44,7 +45,7 @@ function ServiceDetails() {
       {loading && <Preloader />}
       {!loading &&
         <div>
-            <HeaderFive />
+            <HeaderOne />
             <BreadCrumb title="Our Services" />
             <ServiceDetailsSection />
             <FooterOne />

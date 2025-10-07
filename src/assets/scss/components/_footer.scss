@@ -131,11 +131,12 @@
         border: none;
         outline: none;
         // background: #6131E8;
-        background: #FFDE11;
+        background: #E22E46;
         color: #fff;
         transition: 400ms ease-in-out;
         &:hover {
-            background: var(--chy-sd-1);
+            // background: var(--chy-sd-1);
+            background: #ef818f;
         }
     }
 }
@@ -178,7 +179,7 @@
         font-weight: 400;
         span {
             // color: var(--chy-sd-1);
-            color: #FFDE11;
+            color: #E22E46;
         }
     }
 }

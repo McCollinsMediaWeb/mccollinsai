@@ -313,7 +313,7 @@
   display: inline-block;
   flex:  0 0 auto;
   // background: var(--chy-gd-2);
-  background: #FFED11;
+  background: #E22E46;
   font-family: var(--urbanist);
   font-size: 16px;
   line-height: 1;
@@ -349,14 +349,14 @@
     font-size: 14px;
     margin-left: 11px;
     // color: #B55EF5;
-    color: #FFED11;
+    color: #E22E46;
   }
   
   &:hover {
     // color: #B55EF5;
-    color: #FFED11;
+    color: #E22E46;
     // border-color: var(--chy-pr-4);
-    border-color: #FFED11;
+    border-color: #E22E46;
 
     &::after {
       scale: 21;

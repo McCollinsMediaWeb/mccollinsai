@@ -7,6 +7,7 @@ import BackToTop from '../components/back-to-top/BackToTop'
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Preloader from '../components/preloader/Preloader'
+import HeaderOne from '../elements/headers/HeaderOne'
 
 
 
@@ -44,7 +45,7 @@ function ProjectDetails() {
       {loading && <Preloader />}
       {!loading &&
         <div>
-          <HeaderFive />
+          <HeaderOne />
           <BreadCrumb title="Project Details" />
           <ProjectDetailsSection />
           <FooterOne />

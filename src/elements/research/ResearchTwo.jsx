@@ -161,7 +161,7 @@ function ResearchTwo() {
                               },
                               path: {
                                 // stroke: "#EE4619",
-                                stroke: "#FFDE11",
+                                stroke: "#E22E46",
                                 strokeLinecap: "round",
                               },
                             }}
@@ -206,7 +206,7 @@ function ResearchTwo() {
                               },
                               path: {
                                 // stroke: "#EE4619",
-                                stroke: "#FFDE11",
+                                stroke: "#E22E46",
                                 strokeLinecap: "round",
                               },
                             }}

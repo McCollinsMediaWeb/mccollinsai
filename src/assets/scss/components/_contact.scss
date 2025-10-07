@@ -163,7 +163,7 @@
         justify-content: center;
         align-items: center;
         // color: #A249ED;
-        color: #FFDE11;
+        color: #E22E46;
         font-size: 20px;
     }
     .title {
@@ -212,17 +212,17 @@
             height: 62px;
             border-radius: 50%;
             // border: 1px solid #A249ED;
-            border: 1px solid #FFDE11;
+            border: 1px solid #E22E46;
             display: flex;
             justify-content: center;
             align-items: center;
             // color: #A249ED;
-            color: #FFDE11;
+            color: #E22E46;
             font-size: 22px;
             transition: 400ms ease-in-out;
             &:hover {
                 // background-color: #A249ED;
-                background-color: #FFDE11;
+                background-color: #E22E46;
                 color: #fff;
             }
         }
@@ -242,7 +242,7 @@
             width: 15px;
             height: 100%;
             // background: linear-gradient(87deg, #A249ED 57.32%, #6934E9 97.15%);
-            background: linear-gradient(87deg, #FFDE11 57.32%, #FFDE11 97.15%);
+            background: linear-gradient(87deg, #E22E46 57.32%, #E22E46 97.15%);
         }
     }
 }

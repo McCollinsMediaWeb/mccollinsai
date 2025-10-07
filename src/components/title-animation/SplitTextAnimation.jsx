@@ -18,7 +18,7 @@ const SplitText = ({ text }) => {
       onEnter: () => {
         gsap.fromTo(
           letters,
-          { x: 50, opacity: 0, color: '#9946EC' },
+          { x: 50, opacity: 0, color: '#E22E46' },
           { x: 0, opacity: 1, color: 'inherit', stagger: 0.02, duration: 1.5, ease: "Back.easeOut", webkitTextStroke: "0px white" }
         );
       }

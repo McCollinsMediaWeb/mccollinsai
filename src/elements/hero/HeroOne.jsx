@@ -93,7 +93,7 @@ function HeroOne() {
               </p>
 
               <div className="btn-wrap ">
-                <Link to="/about"
+                <Link to="/about-02"
                   className="chy-pr-btn-1"
                   data-aos-delay="50"
                   data-aos="fade-right"
