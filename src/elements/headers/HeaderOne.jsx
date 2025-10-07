@@ -13,16 +13,18 @@ import img6 from "../../assets/img/project/p3-img-2.png";
 import { faFacebookF, faInstagram, faLinkedinIn, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import Fancybox from "../../components/utiles/Fancybox";
 import { faSearch } from "@fortawesome/free-solid-svg-icons/faSearch";
-import { menu_1 } from "../../data/menu/menu";
+import { menu_1, menu_1_og } from "../../data/menu/menu";
 import { menu_2 } from "../../data/menu/menu";
 import logo2 from "../../assets/img/logo/logo-white.png";
 import Logo from "../../assets/img/logo/logo-black.webp";
+import LogoBlack from "../../assets/img/logo/logo-black.svg";
+import logoWhite from "../../assets/img/logo/logo-white.svg";
 
 function HeaderOne() {
 
   // gasp animation
   useGSAP(() => {
-    
+
     var menuToggle = document.getElementById("menuToggle");
     var menuToggle2 = document.getElementById("menuToggle2");
 
@@ -104,8 +106,8 @@ function HeaderOne() {
 
   // handle mobile sub dropdoen menu toggle
   const handleMobMenu2 = (e) => {
-      const dropdown = e.target.parentElement;
-      dropdown.classList.toggle("active2")
+    const dropdown = e.target.parentElement;
+    dropdown.classList.toggle("active2")
   }
 
   return (
@@ -126,7 +128,7 @@ function HeaderOne() {
                   <ul id="main-nav" className="nav navbar-nav clearfix">
 
                     {/* menu data map */}
-                    {menu_1.map((item)=> <li key={item.id} className={item.dropdown && 'dropdown'}>
+                    {menu_1_og.map((item) => <li key={item.id} className={item.dropdown && 'dropdown'}>
                       {item.link ? <NavLink to={item.link}>{item.name}</NavLink> : <a>{item.name}</a>}
 
                       {item?.dropdown && <ul className="dropdown-menu clearfix">
@@ -136,34 +138,34 @@ function HeaderOne() {
                             {dropItem.link ? <NavLink to={dropItem.link}>{dropItem.name}</NavLink> : <a>{dropItem.name}</a>}
                             {dropItem?.dropdown && <ul className="dropdown-menu clearfix">
 
-                            <li>
+                              <li>
                                 {dropItem.dropdown.map((dropItem2, index) => <NavLink key={index} to={dropItem2.link}>{dropItem2.name}</NavLink>)}
-                            </li>
+                              </li>
 
-                          </ul>}
+                            </ul>}
                           </li>
                         )}
                       </ul>}
                     </li>)}
-                    
+
                   </ul>
 
                 </nav>
               </div>
             </div>
 
-            <Link className="d-block chy-logo">
-              <img src={Logo} alt="" />
+            <Link to="/" className="d-block chy-logo">
+              <img src={LogoBlack} alt="" />
             </Link>
 
-            <div className="right d-none d-md-block">
+            {/* <div className="right d-none d-md-block">
               <div className="chy-cart-1">
                 <input type="text" placeholder="search" />
                 <button type="submit" className="search-icon">
                   <FontAwesomeIcon icon={faMagnifyingGlass} />
                 </button>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </header>
@@ -182,7 +184,7 @@ function HeaderOne() {
             <Link
               className="menu-logo d-block"
             >
-              <img src={logo2} alt="" />
+              <img src={logoWhite} alt="" />
             </Link>
             <FontAwesomeIcon
               id="menuToggle2"
@@ -191,69 +193,69 @@ function HeaderOne() {
             />
           </div>
 
-          <div className="mobile-search-bar">
+          {/* <div className="mobile-search-bar">
             <form>
               <input type="text" name="search" placeholder="Keywords" />
               <button type="button" aria-label="search">
                 <FontAwesomeIcon icon={faSearch} />
               </button>
             </form>
-          </div>
+          </div> */}
 
           <div className="fullpage-content-wrap">
             <nav className="mobile-main-navigation  clearfix ul-li">
-                <ul id="m-main-nav" className="nav navbar-nav clearfix">
-                    
+              <ul id="m-main-nav" className="nav navbar-nav clearfix">
+
                 {/* menu data map */}
                 {
-                  menu_2.map((item) =>
-                    
-                    <li key={item.id} className={item.dropdown && 'dropdown'} onClick={(e)=> handleMobMenu(e)}>
-                        
-                          {item.dropdown && <>
-                            <span>{item.name}</span>
-                            <div className="dropdown-btn">
-                              <FontAwesomeIcon icon={faCaretRight} />
-                            </div>
-                          </>}
+                  menu_1_og.map((item) =>
 
-                          {!item.dropdown && <NavLink to={item.link}>{item.name}</NavLink>}
+                    <li key={item.id} className={item.dropdown && 'dropdown'} onClick={(e) => handleMobMenu(e)}>
 
-                          {item?.dropdown && <ul className="dropdown-menu clearfix">
-    
-                            {
-                              item.dropdown.map((dropItem, index) =>
-                                
-                                <li key={index} className={dropItem.dropdown && 'dropdown'} onClick={(e)=> handleMobMenu2(e)}>
+                      {item.dropdown && <>
+                        <span>{item.name}</span>
+                        <div className="dropdown-btn">
+                          <FontAwesomeIcon icon={faCaretRight} />
+                        </div>
+                      </>}
 
-                                    {dropItem.dropdown && <>
-                                      <span>{dropItem.name}</span>
-                                      <div className="dropdown-btn">
-                                        <FontAwesomeIcon icon={faCaretRight} />
-                                      </div>
-                                    </>}
+                      {!item.dropdown && <NavLink to={item.link}>{item.name}</NavLink>}
 
-                                    {!dropItem.dropdown && <NavLink to={dropItem.link}>{dropItem.name}</NavLink>}
-                                    
-                                    {dropItem?.dropdown && <ul className="dropdown-menu clearfix">
+                      {item?.dropdown && <ul className="dropdown-menu clearfix">
 
-                                      <li>
-                                        {dropItem.dropdown.map((dropItem2, index) => <NavLink key={index} to={dropItem2.link}>{dropItem2.name}</NavLink>)}
-                                      </li>
+                        {
+                          item.dropdown.map((dropItem, index) =>
 
-                                    </ul>}
+                            <li key={index} className={dropItem.dropdown && 'dropdown'} onClick={(e) => handleMobMenu2(e)}>
+
+                              {dropItem.dropdown && <>
+                                <span>{dropItem.name}</span>
+                                <div className="dropdown-btn">
+                                  <FontAwesomeIcon icon={faCaretRight} />
+                                </div>
+                              </>}
+
+                              {!dropItem.dropdown && <NavLink to={dropItem.link}>{dropItem.name}</NavLink>}
+
+                              {dropItem?.dropdown && <ul className="dropdown-menu clearfix">
+
+                                <li>
+                                  {dropItem.dropdown.map((dropItem2, index) => <NavLink key={index} to={dropItem2.link}>{dropItem2.name}</NavLink>)}
                                 </li>
 
-                              )
-                            }
-                          
-                          </ul>}
-                    
+                              </ul>}
+                            </li>
+
+                          )
+                        }
+
+                      </ul>}
+
                     </li>
-                    
+
                   )
                 }
-                    
+
               </ul>
             </nav>
 
@@ -335,7 +337,7 @@ function HeaderOne() {
               </Link>
             </li>
           </ul>
-          
+
         </div>
       </div>
     </>

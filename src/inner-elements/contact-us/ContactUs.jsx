@@ -1,7 +1,7 @@
 import React from 'react'
 import bgImage from '../../assets/img/bg/body-bg-3.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBehance, faDribbble, faFacebook, faXTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faBehance, faYoutube, faFacebook, faXTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope, faMapMarkerAlt, faPhone, faRightLong } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
 
@@ -68,7 +68,8 @@ function ContactUs() {
                 <div className="col-lg-5">
                     <div className="contact-page-content">
                         <div className="contact-page-map mb-40">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158858.87879892963!2d-0.4133961526767937!3d51.52844205506356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2sbd!4v1703659075536!5m2!1sen!2sbd" width="600" height="450" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                            {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158858.87879892963!2d-0.4133961526767937!3d51.52844205506356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2sbd!4v1703659075536!5m2!1sen!2sbd" width="600" height="450" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe> */}
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.1472459936335!2d55.155106776213216!3d25.096876477775663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6b4477bb872d%3A0x181209de4e634210!2sMcCollins%20Media!5e0!3m2!1sen!2sin!4v1759816041720!5m2!1sen!2sin" width="600" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                         <div className="border-left">
                             <div className="contact-page-contact-list mb-50">
@@ -78,7 +79,7 @@ function ContactUs() {
                                     </div>
                                     <div className="content-wrap">
                                         <h4 className="chy-heading-1 title">address:</h4>
-                                        <p className="chy-para-1 text">2715 Ash Dr. San Jose, South Dakota 83475</p>
+                                        <p className="chy-para-1 text">G04, Loft Office 2, Entrance C, Dubai Media City, Dubai</p>
                                     </div>
                                 </div>
                                 <div className="item">
@@ -88,8 +89,8 @@ function ContactUs() {
                                     <div className="content-wrap">
                                         <h4 className="chy-heading-1 title">Phone Number:</h4>
                                         <span className="chy-para-1 text">
-                                            <a href='tel:(704) 555-0127'>(704) 555-0127</a>
-                                            <a href='tel:(239) 555-0108'>(239) 555-0108</a>
+                                            <a href='tel:+971559564135'>+971 55 956 4135</a>
+                                            {/* <a href='tel:(239) 555-0108'>(239) 555-0108</a> */}
                                         </span>
                                     </div>
                                 </div>
@@ -99,7 +100,7 @@ function ContactUs() {
                                     </div>
                                     <div className="content-wrap">
                                         <h4 className="chy-heading-1 title">email:</h4>
-                                        <a href='mailto:themexriver@support.com' className="chy-para-1 text">themexriver@support.com</a>
+                                        <a href='mailto:info@mccollinsmedia.com' className="chy-para-1 text" style={{textTransform: "none"}}>info@mccollinsmedia.com</a>
                                     </div>
                                 </div>
                             </div>
@@ -116,12 +117,12 @@ function ContactUs() {
                                 </li>
                                 <li>
                                     <Link aria-label="social">
-                                        <FontAwesomeIcon icon={faDribbble} />
+                                        <FontAwesomeIcon icon={faInstagram} />
                                     </Link>
                                 </li>
                                 <li>
                                     <Link aria-label="social">
-                                        <FontAwesomeIcon icon={faBehance} />
+                                        <FontAwesomeIcon icon={faYoutube} />
                                     </Link>
                                 </li>
 

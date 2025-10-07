@@ -32,7 +32,7 @@ function HomeOne() {
   useEffect(()=> {
     
     // title setup 
-    document.title = `Choicy - Digital Marketing Agency React Template`
+    document.title = `McCollins Media - Digital Marketing Agency`
 
     // aos activation
     AOS.init();

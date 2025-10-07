@@ -130,7 +130,8 @@
         height: 100%;
         border: none;
         outline: none;
-        background: #6131E8;
+        // background: #6131E8;
+        background: #FFDE11;
         color: #fff;
         transition: 400ms ease-in-out;
         &:hover {
@@ -176,7 +177,8 @@
         font-size: 18px;
         font-weight: 400;
         span {
-            color: var(--chy-sd-1);
+            // color: var(--chy-sd-1);
+            color: #FFDE11;
         }
     }
 }

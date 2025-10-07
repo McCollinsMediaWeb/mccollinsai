@@ -12,6 +12,7 @@ import ResearchTwo from '../elements/research/ResearchTwo'
 import MarqueeTwo from '../elements/marquee/MarqueeTwo'
 import PortfolioTwo from '../elements/portfolio/PortfolioTwo'
 import BlogOne from '../elements/blog/BlogOne'
+import HeaderOne from '../elements/headers/HeaderOne'
 
 
 
@@ -21,7 +22,7 @@ function AboutTwo() {
   useEffect(()=> {
     
     // title setup 
-    document.title = `Choicy - About 02`
+    document.title = `McCollins Media - About Us`
 
     // aos activation
     AOS.init();
@@ -50,8 +51,9 @@ function AboutTwo() {
       {loading && <Preloader />}
       {!loading &&
         <div>
-          <HeaderFive />
-          <BreadCrumb title="About 02" />
+          {/* <HeaderFive /> */}
+          <HeaderOne />
+          <BreadCrumb title="About Us" />
           <div className='pb-100'>
             <AboutTwoSection />
           </div>

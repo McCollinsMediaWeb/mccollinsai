@@ -1,5 +1,6 @@
 import React from 'react'
 import logo1 from "../../assets/img/logo/logo-white.png";
+import logo from "../../assets/img/logo/logo-white.svg";
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faRightLong } from '@fortawesome/free-solid-svg-icons';
@@ -14,7 +15,7 @@ function FooterOne() {
         {/* top-content */}
         <div className="chy-footer-1-top">
           <Link to="/" className="d-block footer-logo">
-            <img src={logo1} alt="" />
+            <img src={logo} alt="" />
           </Link>
           <h3 className="chy-heading-1 title  chy-split-in-right chy-split-text">
             <SplitText text="ready to get started" />
@@ -133,7 +134,7 @@ function FooterOne() {
             </li>
           </ul>
           <h4 className="chy-heading-1 copyright-link">
-            2024 themeXriver <span>| all rights reserved</span>
+            2025 McCollins Media <span>| all rights reserved</span>
           </h4>
         </div>
         

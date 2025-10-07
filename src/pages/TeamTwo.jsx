@@ -13,15 +13,16 @@ import "aos/dist/aos.css";
 import Preloader from '../components/preloader/Preloader'
 import TeamFourSection from '../elements/team/TeamFour'
 import { data_2 } from '../data/team/team-four'
+import HeaderOne from '../elements/headers/HeaderOne'
 
 
 
 function TeamTwo() {
 
-  useEffect(()=> {
-    
+  useEffect(() => {
+
     // title setup 
-    document.title = `Choicy - Team 02`
+    document.title = `McCollins Media - Team`
 
     // aos activation
     AOS.init();
@@ -33,27 +34,28 @@ function TeamTwo() {
 
   useEffect(() => {
     const handleLoad = () => {
-    setLoading(false);
+      setLoading(false);
     };
 
     if (document.readyState === 'complete') {
-    setLoading(false);
+      setLoading(false);
     } else {
-    window.addEventListener('load', handleLoad);
-    return () => window.removeEventListener('load', handleLoad);
+      window.addEventListener('load', handleLoad);
+      return () => window.removeEventListener('load', handleLoad);
     }
   }, []);
 
   return (
-      <>
+    <>
       {loading && <Preloader />}
       {!loading &&
         <div>
-          <HeaderFive />
-          <BreadCrumb title="Team 02" />
+          {/* <HeaderFive /> */}
+          <HeaderOne />
+          <BreadCrumb title="Team" />
           <TeamFourSection data={data_2} />
           <VideoPopupOne />
-          <div className="body-bg-1 bg-default" style={{backgroundImage:`url(${bgImage})`}}>
+          <div className="body-bg-1 bg-default" style={{ backgroundImage: `url(${bgImage})` }}>
             <CtaOne />
             <TeamSliderOne />
             <ClientOne />
@@ -61,7 +63,7 @@ function TeamTwo() {
             <BackToTop />
           </div>
         </div>
-        }
+      }
     </>
   )
 }

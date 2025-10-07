@@ -312,7 +312,8 @@
   position: relative;
   display: inline-block;
   flex:  0 0 auto;
-  background: var(--chy-gd-2);
+  // background: var(--chy-gd-2);
+  background: #FFED11;
   font-family: var(--urbanist);
   font-size: 16px;
   line-height: 1;
@@ -347,12 +348,15 @@
     display: inline-block;
     font-size: 14px;
     margin-left: 11px;
-    color: #B55EF5;
+    // color: #B55EF5;
+    color: #FFED11;
   }
   
   &:hover {
-    color: #B55EF5;
-    border-color: var(--chy-pr-4);
+    // color: #B55EF5;
+    color: #FFED11;
+    // border-color: var(--chy-pr-4);
+    border-color: #FFED11;
 
     &::after {
       scale: 21;

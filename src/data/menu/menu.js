@@ -168,6 +168,29 @@ export const menu_1 = [
 //* home-01 and inner page menu data end *//
 
 
+export const menu_1_og = [
+    {
+        id: "01",
+        name: "home",
+        link: "/",
+    },
+    {
+        id: "02",
+        name: "About Us",
+        link: "/about-02",
+    },
+    {
+        id: "03",
+        name: "Team",
+        link: "/team-02",
+    },
+    {
+        id: "04",
+        name: "Contact",
+        link: "/contact-us",
+    }
+]
+
 
 
 
@@ -199,7 +222,7 @@ export const menu_2 = [
             },
         ]
     },
-    {   
+    {
         id: "02",
         name: "services",
         link: "/services-01",
@@ -310,7 +333,7 @@ export const menu_2 = [
                 name: "process",
                 link: "/process",
             },
-            
+
         ]
     },
     {
@@ -374,7 +397,7 @@ export const menu_3 = [
             },
         ]
     },
-    {   
+    {
         id: "02",
         name: "services",
         link: "/services-01",
@@ -393,7 +416,7 @@ export const menu_3 = [
             }
         ]
     },
-    {   
+    {
         id: "03",
         name: "project",
         dropdown: [
@@ -411,7 +434,7 @@ export const menu_3 = [
             },
         ]
     },
-    {   
+    {
         id: "04",
         name: "pages",
         dropdown: [
@@ -486,10 +509,10 @@ export const menu_3 = [
                 name: "process",
                 link: "/process",
             },
-            
+
         ]
     },
-    {   
+    {
         id: "05",
         name: "blog",
         dropdown: [
@@ -507,7 +530,7 @@ export const menu_3 = [
             },
         ]
     },
-    {   
+    {
         id: "06",
         name: "contact us",
         link: "/contact-us",

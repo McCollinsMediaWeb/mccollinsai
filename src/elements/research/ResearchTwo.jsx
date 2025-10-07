@@ -160,7 +160,8 @@ function ResearchTwo() {
                                 textAnchor: "middle",
                               },
                               path: {
-                                stroke: "#EE4619",
+                                // stroke: "#EE4619",
+                                stroke: "#FFDE11",
                                 strokeLinecap: "round",
                               },
                             }}
@@ -204,7 +205,8 @@ function ResearchTwo() {
                                 textAnchor: "middle",
                               },
                               path: {
-                                stroke: "#EE4619",
+                                // stroke: "#EE4619",
+                                stroke: "#FFDE11",
                                 strokeLinecap: "round",
                               },
                             }}

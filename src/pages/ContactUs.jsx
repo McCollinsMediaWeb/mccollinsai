@@ -7,6 +7,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Preloader from '../components/preloader/Preloader'
 import ContactUsSection from '../inner-elements/contact-us/ContactUs'
+import HeaderOne from '../elements/headers/HeaderOne'
 
 
 
@@ -15,7 +16,7 @@ function ContactUs() {
   useEffect(()=> {
     
     // title setup 
-    document.title = `Choicy - Contact Us`
+    document.title = `McCollins Media - Contact Us`
 
     // aos activation
     AOS.init();
@@ -44,7 +45,8 @@ function ContactUs() {
       {loading && <Preloader />}
       {!loading &&
         <div>
-          <HeaderFive />
+          {/* <HeaderFive /> */}
+          <HeaderOne/>
           <BreadCrumb title="Contact Us" />
           <ContactUsSection />
           <FooterOne />
